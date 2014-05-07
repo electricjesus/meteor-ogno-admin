@@ -17,6 +17,7 @@
             </ul>
         </div>
     {{else}}
+        <div class="ui purple add-document button"><i class="add icon"></i>Add</div>
         <table id="collectionTable" class="ui table sortable">
             <thead>
             <tr>
@@ -37,12 +38,11 @@
             </tr>
             {{/each}}
         </table>
-
+        <div class="ui purple add-document button"><i class="add icon"></i>Add</div>
         {{#if hasMoreItems}}
             {{{pager}}}
         {{/if}}
 
-        <div class="ui purple add-document button"><i class="add icon"></i>Add</div>
 
         <div class="ui page dimmer">
             <div class="content">
